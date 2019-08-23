@@ -60,7 +60,7 @@ THE SOFTWARE.-->
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">Enjoy the trip!</a>
+                    <a class="navbar-brand" href="{{ route('home') }}">Enjoy the trip!</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -76,7 +76,7 @@ THE SOFTWARE.-->
                             </ul>
                         </li>
                         <li><p class="navbar-text">John Doe</p></li>
-                        <li><a href="admin.blade.php?view=profile">Profile</a></li>
+                        <li><a href="{{ route('profile') }}">Profile</a></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
@@ -87,10 +87,10 @@ THE SOFTWARE.-->
             <div class="row">
                 <div class="col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
-                        <li class="active"><a href="admin.blade.php">Booking calendar <span class="sr-only">(current)</span></a></li>
-                        <li><a href="admin.blade.php?view=myobjects">My tourist objects</a></li>
-                        <li><a href="admin.blade.php?view=saveobject">Add a new tourist object</a></li>
-                        <li><a href="admin.blade.php?view=cities">Cities</a></li>
+                        <li class="active"><a href="{{ route('adminHome') }}">Booking calendar <span class="sr-only">(current)</span></a></li>
+                        <li><a href="{{ route('myObjects') }}">My tourist objects</a></li>
+                        <li><a href="{{ route('saveObject') }}">Add a new tourist object</a></li>
+                        <li><a href="{{ route('cities.index') }}">Cities</a></li>
                     </ul>
                 </div>
 

@@ -17,7 +17,7 @@
                         <div class="caption">
                             <h3>Lorem ipsum  <small>City</small> </h3>
                             <p>Lorem impsum dolor sit amet. Lorem impsum dolor sit amet.</p>
-                            <p><a href="./?view=object" class="btn btn-primary" role="button">Details</a></p>
+                            <p><a href="{{ route('object') }}" class="btn btn-primary" role="button">Details</a></p>
                         </div>
                     </div>
                 </div>

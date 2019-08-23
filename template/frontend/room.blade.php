@@ -1,6 +1,6 @@
 
 <div class="container places">
-    <h1 class="text-center">Room in <a href="./?view=object">X</a> object</h1>
+    <h1 class="text-center">Room in <a href="{{ route('object') }}">X</a> object</h1>
 
     <?php for ($i = 1; $i <= 2; $i++): ?>
 

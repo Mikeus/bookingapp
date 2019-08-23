@@ -57,7 +57,7 @@ THE SOFTWARE.-->
                     <ul class="nav navbar-nav">
                         <li><p class="navbar-text">Logged in as:</p></li>
                         <li><p class="navbar-text">Robert</p></li>
-                        <li><a href="admin.blade.php">admin</a></li>
+                        <li><a href="{{ route('adminHome') }}">admin</a></li>
                         <li><a href="#contact">logout</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -73,7 +73,7 @@ THE SOFTWARE.-->
                 <h1>Enjoy the trip!</h1>
                 <p>A platform for tourists and owners of tourist facilities. Find the original place for the holidays!</p>
                 <p>Place your home on the site and let yourself be found by many tourists!</p>
-                <form action="./?view=roomsearch" class="form-inline">
+                <form action="{{ route('roomSearch') }}" class="form-inline">
                     <div class="form-group">
                         <label class="sr-only" for="city">City</label>
                         <input name="city" type="text" class="form-control autocomplete" id="city" placeholder="City">
